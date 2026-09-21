@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <title>Evie Ming</title>
+  <rect width="64" height="64" rx="15" fill="#111111"/>
+  <path d="M16 15h37l-10 10H13z" fill="#ffffff"/>
+  <path d="M39 27h12L25 49H12z" fill="#ffffff"/>
+  <path d="M30 39h21l-3 10H18z" fill="#ffffff"/>
+</svg>

@@ -1,0 +1,36 @@
+# EV0331 — 明艺薇 / Evie Ming
+
+> 明艺薇（Evie Ming）的个人主页与项目作品集。她是中国人民大学金融学学生、AI 应用独立开发者与 Adobe Certified Professional，关注 AI 产品、教育科技、前端与全栈开发、产品设计、UI/UX 与人机交互。
+
+Canonical website: https://lmzq.yunzhicompany.com/
+Source repository: https://github.com/mingyiwei954-bit/heymy
+GitHub profile: https://github.com/mingyiwei954-bit
+
+## Profile
+
+- Name: 明艺薇
+- English name: Evie Ming
+- Online identity: EV0331
+- Education: Finance student at Renmin University of China
+- Roles: Independent AI application developer; frontend developer; product designer; Adobe Certified Professional
+- Interests: AI products, AI for education, financial technology, full-stack web development, product strategy, UI/UX, visual design, MCP integration, prompt design and workflow orchestration
+
+## Selected projects
+
+- Xiao Yunzhi / 小云智: an AI study companion combining mistake memory with practical learning workflows. https://www.yunzhicompany.com/
+- WordWiki: a vocabulary product for lookup, review and personal word lists. https://word.yunzhicompany.com/
+- Zaichang / 在场: a campus community for updates, peer support and learning resources. https://hks.yunzhicompany.com/
+- Guolairen / 过来人: a Zhihu Hackathon project for sharing lived experience across life stages. https://zhihu.yunzhicompany.com/
+
+## Portfolio sections
+
+- About: https://lmzq.yunzhicompany.com/#about
+- Skills: https://lmzq.yunzhicompany.com/#skills
+- Services: https://lmzq.yunzhicompany.com/#services
+- Projects: https://lmzq.yunzhicompany.com/#portfolio
+- Contact: https://lmzq.yunzhicompany.com/#contact
+- Adobe certificate: https://lmzq.yunzhicompany.com/certificates/adobe.html
+
+## Website capabilities
+
+The portfolio supports Chinese and English, light and dark themes, responsive desktop/mobile layouts, animated project and skill sections, an interactive click-heart effect, a persistent like counter, project showcases, certificate preview, and separate service pages for UI/experience design, frontend development, and brand/visual design.

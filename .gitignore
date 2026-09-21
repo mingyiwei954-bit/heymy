@@ -1,0 +1,10 @@
+.DS_Store
+.env
+.env.*
+.venv/
+__pycache__/
+*.pyc
+*.log
+*.tmp
+*.sqlite3
+.server/data/
