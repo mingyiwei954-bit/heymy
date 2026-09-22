@@ -2208,14 +2208,18 @@ img, svg image {
 
 /* Local card reveal: content remains visible when JavaScript is unavailable. */
 .card-reveal {
-  --card-reveal-y: 24px;
+  --card-reveal-y: 28px;
   opacity: 0;
   transform: translate3d(0, var(--card-reveal-y), 0);
   will-change: opacity, transform;
 }
 
+.card-reveal.card-reveal--from-top {
+  --card-reveal-y: -28px;
+}
+
 .card-reveal.card-reveal--visible {
-  animation: card-reveal-in 760ms cubic-bezier(.22, 1, .36, 1)
+  animation: card-reveal-in 1200ms cubic-bezier(.22, 1, .36, 1)
     var(--card-reveal-delay, 0ms) both;
 }
 
@@ -2281,6 +2285,10 @@ img, svg image {
 
   .card-reveal {
     --card-reveal-y: 18px;
+  }
+
+  .card-reveal.card-reveal--from-top {
+    --card-reveal-y: -18px;
   }
 
   .language-toggle {
