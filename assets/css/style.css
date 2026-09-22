@@ -741,12 +741,6 @@ body.dark-theme .practice-card:nth-child(even) { --practice-ink: hsl(155, 28%, 7
   from { transform: translateX(0); }
   to { transform: translateX(-50%); }
 }
-.practice-card[data-aos] {
-  transition-property: opacity, transform, scale !important;
-  transition-duration: 650ms, 650ms, 1100ms !important;
-  transition-timing-function: ease, ease, cubic-bezier(.25, .1, .25, 1) !important;
-  transition-delay: 0s !important;
-}
 @media (hover: hover) and (prefers-reduced-motion: no-preference) {
   .practice-card:hover { scale: 1.03; }
 }
@@ -2211,6 +2205,41 @@ img, svg image {
 }
 
 /*==================== MOBILE COMPATIBILITY ====================*/
+
+/* Local card reveal: content remains visible when JavaScript is unavailable. */
+.card-reveal {
+  --card-reveal-y: 24px;
+  opacity: 0;
+  transform: translate3d(0, var(--card-reveal-y), 0);
+  will-change: opacity, transform;
+}
+
+.card-reveal.card-reveal--visible {
+  animation: card-reveal-in 760ms cubic-bezier(.22, 1, .36, 1)
+    var(--card-reveal-delay, 0ms) both;
+}
+
+@keyframes card-reveal-in {
+  from {
+    opacity: 0;
+    transform: translate3d(0, var(--card-reveal-y), 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card-reveal,
+  .card-reveal.card-reveal--visible {
+    opacity: 1;
+    transform: none;
+    animation: none;
+    transition: none;
+  }
+}
+
 @media screen and (max-width: 767px) {
   html,
   body {
@@ -2243,12 +2272,15 @@ img, svg image {
     scroll-margin-top: 1rem;
   }
 
-  /* AOS can leave deep-linked sections transparent on a short viewport. */
-  [data-aos],
-  [data-aos].aos-animate {
+  /* Legacy AOS attributes no longer control visibility. */
+  [data-aos]:not(.card-reveal),
+  [data-aos].aos-animate:not(.card-reveal) {
     opacity: 1 !important;
     transform: none !important;
-    transition: none !important;
+  }
+
+  .card-reveal {
+    --card-reveal-y: 18px;
   }
 
   .language-toggle {
